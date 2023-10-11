@@ -1,6 +1,6 @@
 from prindent import prindent
 
-# Example usage
+# auto indentation usage
 prindent('first loop')
 for i in range(2):
     prindent('i:', i)
@@ -10,7 +10,16 @@ for i in range(2):
         if j == 1:
             prindent('j=1')
 
+# custom string for indentation
 if True:
     if True:
         for i in range(2):
             prindent('Custom indent', indent='---> ')
+
+# multiple newlines
+if True:
+    prindent('String\nwith\nnewline')
+
+# multiple args and kwargs
+if True:
+    prindent('first', 'second', end='$')
