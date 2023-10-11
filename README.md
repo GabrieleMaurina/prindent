@@ -1,6 +1,10 @@
 # prindent
 Python module to print with automatic indentation
 
+Sometimes it is useful to print with indentation to better visualize the data. This is particularly true when multiple `for` loops and `if` statements are nested. `prindent` can automatically indent everything for you.
+
+### Usage
+
 ```python
 from prindent import prindent
 
@@ -26,8 +30,7 @@ for i in range(2):
 #             j=1
 ```
 
-You can also pass a custom string for indentation:
-
+`prindent` supports custom indentation strings:
 ```python
 if True:
     if True:
@@ -38,8 +41,7 @@ if True:
 # ---> ---> ---> Custom indent
 ```
 
-`prindent`` handles multiple lines:
-
+`prindent` handles multiple lines:
 ```python
 if True:
     prindent('String\nwith\nnewline')
@@ -50,7 +52,6 @@ if True:
 ```
 
 `prindent` accepts multiple `args` and `kwargs` just like `print()`:
-
 ```python
 if True:
     prindent('first', 'second', end='$')
