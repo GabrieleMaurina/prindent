@@ -16,7 +16,7 @@ if True:
         for i in range(2):
             prindent('Custom indent', indent='---> ')
 
-# multiple newlines
+# multiple lines
 if True:
     prindent('String\nwith\nnewline')
 

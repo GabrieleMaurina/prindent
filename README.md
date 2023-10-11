@@ -38,7 +38,7 @@ if True:
 # ---> ---> ---> Custom indent
 ```
 
-Prindent handles multiple new lines:
+`prindent`` handles multiple lines:
 
 ```python
 if True:
@@ -49,7 +49,7 @@ if True:
 #     newline
 ```
 
-Prindent accepts multiple `args` and `kwargs` like `print()`:
+`prindent` accepts multiple `args` and `kwargs` just like `print()`:
 
 ```python
 if True:
